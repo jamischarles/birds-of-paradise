@@ -1,0 +1,12 @@
+{
+  "name": "birds-of-paradise",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Atom fork of birds-of-pardise Textmate theme.",
+  "repository": "https://github.com/jamischarles/birds-of-paradise",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
