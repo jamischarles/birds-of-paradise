@@ -4,7 +4,9 @@
 }
 
 .editor .indent-guide {
-  color: rgba(230, 225, 196, 0.14);
+  border-left: 1px dotted rgba(230, 225, 196, 0.14);
+  // color: rgba(230, 225, 196, 0.14); //fade out the default color
+  box-shadow: inset 0px 0; //override default indent-guide so we can use dotted lines
 }
 
 .editor.is-focused .cursor {
