@@ -4,7 +4,7 @@
 }
 
 .editor .indent-guide {
-  border-left: 1px dotted rgba(230, 225, 196, 0.14);
+  border-left: 1px dotted rgba(230, 225, 196, 0.14); //TODO: make this a shade of the comment brown?
   // color: rgba(230, 225, 196, 0.14); //fade out the default color
   box-shadow: inset 0px 0; //override default indent-guide so we can use dotted lines
 }
@@ -24,6 +24,12 @@
 .comment {
   font-style: normal;
   color: #6B4E32;
+}
+
+.wrap-guide {
+  background-color: #6B4E32;//override wrap-guide color, to be same as comment-color
+  background-color: rgba(230, 225, 196, 0.14); //same as indent guide
+
 }
 
 .string.quoted.double.block.python {
