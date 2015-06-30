@@ -1,23 +1,23 @@
-atom-text-editor, atom-text-editor .gutter {
+atom-text-editor, atom-text-editor::shadow .gutter {
   background-color: #372725;
   color: #E6E1C4;
 }
 
-atom-text-editor .indent-guide {
+atom-text-editor::shadow .indent-guide {
   border-left: 1px dotted rgba(230, 225, 196, 0.14); //TODO: make this a shade of the comment brown?
   // color: rgba(230, 225, 196, 0.14); //fade out the default color
   box-shadow: inset 0px 0; //override default indent-guide so we can use dotted lines
 }
 
-atom-text-editor.is-focused .cursor {
+atom-text-editor.is-focused::shadow .cursor {
   border-color: #DDDDDD;
 }
 
-atom-text-editor.is-focused .selection .region {
+atom-text-editor.is-focused::shadow .selection .region {
   background-color: #A40042;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+atom-text-editor.is-focused::shadow .line-number.cursor-line-no-selection, atom-text-editor.is-focused::shadow .line.cursor-line {
   background-color: rgba(40, 28, 28, 0.4);
 }
 
