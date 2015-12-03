@@ -4,9 +4,16 @@ atom-text-editor, atom-text-editor::shadow .gutter {
 }
 
 atom-text-editor::shadow .indent-guide {
-  border-left: 1px dotted rgba(230, 225, 196, 0.14); //TODO: make this a shade of the comment brown?
-  // color: rgba(230, 225, 196, 0.14); //fade out the default color
+  position: relative;
   box-shadow: inset 0px 0; //override default indent-guide so we can use dotted lines
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    border-left: 1px dotted rgba(230, 225, 196, 0.14);
+  }
 }
 
 atom-text-editor.is-focused::shadow .cursor {
@@ -14,7 +21,7 @@ atom-text-editor.is-focused::shadow .cursor {
 }
 
 atom-text-editor.is-focused::shadow .selection .region {
-  background-color: #A40042;
+  background-color: #67281c;
 }
 
 atom-text-editor.is-focused::shadow .line-number.cursor-line-no-selection, atom-text-editor.is-focused::shadow .line.cursor-line {
@@ -62,7 +69,7 @@ atom-text-editor.is-focused::shadow .line-number.cursor-line-no-selection, atom-
   color: #E6E1C4;
 }
 
-.variable {
+.variable, .support.class.ruby {
   color: #7DAF9C;
 }
 
